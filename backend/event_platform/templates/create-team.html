@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team - Forguild</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Auth Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="dashboard.html">
+                <i class="bi bi-hexagon-fill text-violet me-2"></i>Event<span>Hub</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDash">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarDash">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item me-4 position-relative">
+                        <a class="nav-link fs-5 text-dark" href="notifications.html">
+                            <i class="bi bi-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown">
+                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=8A2BE2&color=fff"
+                                alt="Profile" class="rounded-circle me-2" width="32" height="32">
+                            <span class="d-none d-md-inline text-dark fw-bold">John Doe</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="dashboard.html"><i class="bi bi-grid-1x2 me-2"></i>
+                                    Dashboard</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="index.html"><i
+                                        class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid flex-grow-1">
+        <div class="row h-100">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-white border-end px-0">
+                <div class="list-group list-group-flush border-0">
+                    <a href="dashboard.html" class="list-group-item list-group-item-action border-0 sidebar-link">
+                        <i class="bi bi-grid-1x2 me-2"></i> Dashboard
+                    </a>
+                    <a href="events.html" class="list-group-item list-group-item-action border-0 sidebar-link">
+                        <i class="bi bi-calendar-event me-2"></i> Browse Events
+                    </a>
+                    <a href="team-list.html" class="list-group-item list-group-item-action border-0 sidebar-link">
+                        <i class="bi bi-people me-2"></i> Teams
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-md-9 col-lg-10 p-4">
+                <div class="mb-4">
+                    <h2 class="fw-bold mb-0">Create a New Team</h2>
+                    <p class="text-muted">Start recruiting members for your next big hackathon idea.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm bg-white">
+                            <div class="card-body p-4 p-md-5">
+                                <form
+                                    onsubmit="event.preventDefault(); alert('Team Created!'); window.location.href='team-details.html'">
+
+                                    <h5 class="fw-bold mb-3 border-bottom pb-2">Basic Info</h5>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Team Name</label>
+                                        <input type="text" class="form-control" placeholder="e.g., Code Crusaders"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold">Select Event</label>
+                                        <select class="form-select" required>
+                                            <option value="" disabled selected>Select an event your team will
+                                                participate in...</option>
+                                            <option value="1">Global AI Hackathon 2026</option>
+                                            <option value="2">FinTech Innovators Build</option>
+                                            <option value="3">Sustainable Tech Jam</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold">Project Idea (Optional)</label>
+                                        <textarea class="form-control" rows="3"
+                                            placeholder="Briefly describe what you're thinking of building..."></textarea>
+                                        <div class="form-text">Don't have an idea yet? That's fine! Say you're open to
+                                            brainstorming.</div>
+                                    </div>
+
+                                    <h5 class="fw-bold mb-3 mt-5 border-bottom pb-2">Recruiting</h5>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Maximum Team Size</label>
+                                        <input type="number" class="form-control" value="4" min="2" max="6"
+                                            style="max-width: 150px;" required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold">Roles Needed</label>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="roleFront">
+                                                <label class="form-check-label badge bg-light text-dark border p-2"
+                                                    for="roleFront">Frontend Dev</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="roleBack">
+                                                <label class="form-check-label badge bg-light text-dark border p-2"
+                                                    for="roleBack">Backend Dev</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="roleFull">
+                                                <label class="form-check-label badge bg-light text-dark border p-2"
+                                                    for="roleFull">Full Stack Dev</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="roleUX">
+                                                <label class="form-check-label badge bg-light text-dark border p-2"
+                                                    for="roleUX">UX/UI Designer</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="roleData">
+                                                <label class="form-check-label badge bg-light text-dark border p-2"
+                                                    for="roleData">Data Scientist</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <a href="dashboard.html" class="btn btn-outline-secondary">Cancel</a>
+                                        <button type="submit" class="btn btn-primary px-4 fw-bold">Create Team</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- App JS -->
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>

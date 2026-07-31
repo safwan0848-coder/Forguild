@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forguild - Build Together. Grow Together.</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-hexagon-fill text-violet me-2"></i>Event<span>Hub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team-list.html">Find a Team</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-outline-primary me-2" href="login.html">Login</a>
+                        <a class="btn btn-gold" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-3 fw-bold mb-4">Build the future with <br><span class="text-gradient">top
+                            developers worldwide.</span></h1>
+                    <p class="lead text-muted mb-5 px-md-5">Join premium hackathons, form elite teams, and showcase your
+                        skills to the world. Forguild is the premier collaboration platform.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="events.html" class="btn btn-primary btn-lg px-4 py-3 rounded-pill fw-bold">Explore
+                            Events</a>
+                        <a href="register.html"
+                            class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill fw-bold bg-white">Create
+                            Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events Preview -->
+    <section class="py-5 bg-white">
+        <div class="container my-5">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h6 class="text-violet fw-bold text-uppercase tracking-wide mb-1">Upcoming</h6>
+                    <h2 class="mb-0">Featured Hackathons</h2>
+                </div>
+                <a href="events.html" class="btn btn-outline-primary rounded-pill">View All <i
+                        class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="row" id="events-container">
+                <!-- Rendered by app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Forguild -->
+    <section class="py-5 border-top position-relative"
+        style="background: rgba(255,255,255,0.5); backdrop-filter: blur(10px);">
+        <div class="container my-5">
+            <h2 class="text-center mb-5 display-5 fw-bold">Why Choose <span class="text-violet">Event</span><span
+                    class="text-gold">Hub</span>?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border feature-icon-box">
+                        <div class="bg-violet text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h4 class="text-gold mb-3">Smart Teambuilding</h4>
+                        <p class="text-muted position-relative z-1">Find the perfect teammates based on skills,
+                            timezones, and hackathon experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border feature-icon-box">
+                        <div class="bg-gold text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-rocket fs-2"></i>
+                        </div>
+                        <h4 class="text-gold mb-3">Premium Events</h4>
+                        <p class="text-muted position-relative z-1">Access curated, high-quality hackathons from top
+                            tech companies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border feature-icon-box">
+                        <div class="bg-violet text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-award fs-2"></i>
+                        </div>
+                        <h4 class="text-gold mb-3">Showcase Profile</h4>
+                        <p class="text-muted position-relative z-1">Build a shiny portfolio with verified participation
+                            and winning badges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="text-muted mb-0">&copy; 2026 Forguild. Constructed with Bootstrap 5 & Vanilla JS.</p>
+            <div class="mt-2">
+                <a href="#" class="text-violet ms-2 fs-5"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-violet ms-2 fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-violet ms-2 fs-5"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- App JS -->
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
