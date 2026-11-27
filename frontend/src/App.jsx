@@ -22,6 +22,9 @@ import NotificationsPage from './pages/NotificationsPage';
 import SearchResultsPage from './pages/SearchResultsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
+import SupportPage from './pages/SupportPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -74,6 +77,9 @@ export default function App() {
                 <Route path="/search" element={<SearchResultsPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
+                <Route path="/terms" element={<TermsOfServicePage />} />
+                <Route path="/support" element={<SupportPage />} />
               </Routes>
             </main>
             <Footer />

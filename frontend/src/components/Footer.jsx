@@ -63,9 +63,9 @@ export default function Footer() {
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted-custom">
           <p className="mb-0">© 2026 Forguild. All rights reserved.</p>
           <div className="d-flex gap-3 mt-2 mt-md-0">
-            <a href="#" className="text-muted-custom text-decoration-none">Privacy Policy</a>
-            <a href="#" className="text-muted-custom text-decoration-none">Terms of Service</a>
-            <a href="#" className="text-muted-custom text-decoration-none">Support</a>
+            <Link to="/privacy" className="text-muted-custom text-decoration-none">Privacy Policy</Link>
+            <Link to="/terms" className="text-muted-custom text-decoration-none">Terms of Service</Link>
+            <Link to="/support" className="text-muted-custom text-decoration-none">Support</Link>
           </div>
         </div>
       </div>
