@@ -131,10 +131,6 @@ export default function Navbar() {
                 <Link to="/register" className="btn btn-sm btn-gold rounded-pill">
                   Sign Up
                 </Link>
-
-                                <Link to="/" className="btn btn-sm btn-gold rounded-pill">
-                  testing
-                </Link>
               </div>
             </li>
           </ul>

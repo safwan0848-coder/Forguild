@@ -266,6 +266,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--primary-light) !important;
 }
 
+.card-static:hover {
+  transform: none;
+  box-shadow: var(--card-shadow) !important;
+  border-color: var(--border-glass) !important;
+}
+
 .card-title {
   color: var(--text-main);
   font-weight: 800;
